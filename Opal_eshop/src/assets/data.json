@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "image": "/src/assets/img/bvlgari.webp",
+        "fragrance_name": "Man Rain Essence",
+        "gender": "men",
+        "price": "70",
+        "description": "BVLGARI MAN RAIN ESSENCE is an invitation to experience the unstoppable creative force of Water through the transformative and regenerative power of rain. A fragrance paying homage to the thrill and the invigorating lively trail of this natural element in an olfactive crescendo. Powerful yet essential like rain, Bvlgari Man Rain Essence is a fresh woody musk signature with a transparent and fizzy trail, a fragrance whose strength is expressed by a powerful minerality. The Bvlgari Man Rain Essence bottle appears to be sculpted by a fluid energy that generates unpredictable reflections and an essential, refined appeal.",
+        "quantity": "100ML",
+        "company": "BVLGARI",
+        "rating": 4
+    },
+    {
+        "id": 2,
+        "image": "/src/assets/img/versace.jpg",
+        "fragrance_name": "VERSACE Eros",
+        "gender": "men",
+        "price": "92",
+        "description": "Created by perfumer Olivier Pescheux, Eros eau de parfum expresses sensuality and power, an extreme force that represents a heroic and passionate man, much like Eros, the Greek god whose arrow can make you fall in love. A fragrance with an element of charm that brings love, passion and seduction splendidly to the fore, Eros EDP embodies excess and provocation. It has a signature that is not afraid to flaunt itself and reveal its extremes, with a stark contrast between the extremely citrusy and the extremely delicate.",
+        "quantity": "100ML",
+        "company": "VERSACE",
+        "rating": 3
+    },
+    {
+        "id": 3,
+        "image": "/src/assets/img/babmoo.jpg",
+        "fragrance_name": "Bamboo",
+        "gender": "women",
+        "price": "62.99",
+        "description": "The new scent offers alluring insight into the Gucci woman's sensual, romantic side. Fresher and brighter, Bamboo Eau de Toilette for women unfolds with a new sheer sensuality. Sparkling Mediterranean citruses of orange blossom and bergamot radiate from the top while the perfume's feminine white floral heart is illuminated with dewy petals, underscored with the lasting signature notes of the original sandalwood, vanilla and amber essence", 
+        "quantity": "75ML",
+        "company": "Gucci",
+        "rating": 3
+    },
+    {
+        "id": 4,
+        "image": "/src/assets/img/dior.webp",
+        "fragrance_name": "Sauvage",
+        "gender": "men",
+        "price": "79",
+        "description": "François Demachy, Dior Perfumer-Creator, drew inspiration from the desert in the magical hour of twilight. Mixed with the coolness of the night, the burning desert air exudes profound fragrances. In the hour when the wolves come out and the sky is set ablaze, a new magic unfolds.",
+        "quantity": "60ML",
+        "company": "Dior",
+        "rating": 5
+    },
+    {
+        "id": 5,
+        "image": "/src/assets/img/prada-paradoxe.webp",
+        "fragrance_name": "Paradoxe Intense",
+        "gender": "women",
+        "price": "77.60",
+        "description": "Prada Paradoxe Intense Eau de Parfum, the new feminine intensity by Prada. This feminine fragrance explores strength through the lens of delicacy. The result is the intense signature of a woman in perpetual self-reinvention, challenging conventions to explore a femininity that is both powerful and delicate. A floral ambery fragrance with a woody inflexion that reveals the paradoxical intensity of delicate ingredients: the powerful lift of a delicate Jasmine flower and the vibrant and enveloping warmth of an Amber accord, intensified by a subtle yet instantly recognizable Moss accord. An intense scent for a powerfully enigmatic and captivating expression of femininity.",
+        "quantity": "50ML",
+        "company": "Prada",
+        "rating": 1
+    },
+    {
+        "id": 6,
+        "image": "/src/assets/img/chanel.jpg",
+        "fragrance_name": "COCO MADEMOISELLE",
+        "gender": "women",
+        "price": "136",
+        "description": "The essence of a bold and free woman. A feminine ambery fragrance with a strong personality and a surprising freshness.",
+        "quantity": "100ML",
+        "company": "Chanel",
+        "rating": 2
+    },
+    {
+        "id": 7,
+        "image": "/src/assets/img/ck.avif",
+        "fragrance_name": "IN2U",
+        "gender": "women",
+        "price": "21.99",
+        "description": "CK IN2U for Women perfume is an eau de toilette for one who always connected to what she wants, anytime and anywhere. A sexy burst of pink grapefruit fizz and Sicilian bergamot lead this thrilling fragrance, while a heart of mouthwatering sugar orchid and white cactus embodies its sensual, decisive side. Radiant red cedar and vanilla soufflé form a warm and seductive base.",
+        "quantity": "100ML",
+        "company": "Calvin Klein",
+        "rating": 4
+    },
+    {
+        "id": 8,
+        "image": "/src/assets/img/libre.avif",
+        "fragrance_name": "Libre",
+        "gender": "women",
+        "price": "92",
+        "description": "LIBRE, the French word for ‘free’, pays tribute to YSL’s most defining and enduring value: Freedom. Freedom to be yourself. Freedom of choice. Freedom to live everything to the full. No compromise. Your own rules.",
+        "quantity": "60ML",
+        "company": "YVES SAINT LAURENT",
+        "rating": 3
+    },
+    {
+        "id": 9,
+        "image": "/src/assets/img/armani.jpg",
+        "fragrance_name": "Stronger With You Intensely",
+        "gender": "men",
+        "price": "62.68",
+        "description": "An audacious fragrance due to a contrastful fresh & spicy aromatic top note obtained thanks to the pink pepper. More addictive, with its signature Sugar Coated Chetsnut Accord in overdose. Warm and spicy notes of Cinnamon push the Chestnut at the very heart of the fragrance.",
+        "quantity": "50ML",
+        "company": "Armani",
+        "rating": 1
+    },
+    {
+        "id": 10,
+        "image": "/src/assets/img/blueJeans.jpg",
+        "fragrance_name": "Blue Jeans",
+        "gender": "men",
+        "price": "16.99",
+        "description": "A fresh and woody blend of bergamot, nutmeg, sandalwood and vetiver.",
+        "quantity": "75ML",
+        "company": "VERSACE",
+        "rating": 5
+    },
+    {
+        "id": 11,
+        "image": "/src/assets/img/ford.avif",
+        "fragrance_name": "Black Orchid",
+        "gender": "men",
+        "price": "106",
+        "description": "Black Orchid is a rich blend of spice and darkness to revolve around you, to be closer, and closer to you. Unleash its perfect power -both rare and extraordinary.",
+        "quantity": "50ML",
+        "company": "Tom Ford",
+        "rating": 5
+    },
+    {
+        "id": 12,
+        "image": "/src/assets/img/gucci.jpg",
+        "fragrance_name": "Flora Gorgeous Gardenia",
+        "gender": "women",
+        "price": "95.50",
+        "description": "Gucci Flora Gorgeous Gardenia Eau de Parfum for Women is a joyful floral perfume. A delicious potion of joy built around the Gardenia flower blended with solar Jasmine absolute, cheerful Pear Blossom accord and sweet Brown Sugar accord.",
+        "quantity": "50ML",
+        "company": "Gucci",
+        "rating": 2
+    },
+    {
+        "id": 13,
+        "image": "/src/assets/img/5th.jpg",
+        "fragrance_name": "5th Avenue",
+        "gender": "women",
+        "price": "25.99",
+        "description": "5th AVENUE Eau de Parfum is inspired by the distinctive architecture of the New York skyline, capturing the alluring style, energy and excitement of the city. The fragrance is classically feminine with sheer top notes of dewy magnolia and bergamot mingled over a floral heart that’s warmed by a sensual dry wood base.",
+        "quantity": "125ML",
+        "company": "ELIZABETH ARDEN",
+        "rating": 1
+    },
+    {
+        "id": 14,
+        "image": "/src/assets/img/dolce.avif",
+        "fragrance_name": "K",
+        "gender": "men",
+        "price": "49.99",
+        "description": "With K by Dolce&Gabbana Eau de Parfum,Dolce&Gabbana unfolds the hidden traits of this man and offers an intimate glimpse into his life. Intense,magnetic and sensual,the Eau de Parfum unveils the full depths of his passions. Balancing strength with a heart that is always kind,he proves that he was born not only to wear his crown,but to truly own it.",
+        "quantity": "50ML",
+        "company": "DOLCE&GABBANA",
+        "rating": 4
+    }
+]
