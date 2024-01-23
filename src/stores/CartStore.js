@@ -26,6 +26,7 @@ export const useCartStore = defineStore('cartStore', {
         addItemToCart(id) {
             this.updateCartItem(id);
         },
+
         addItemToCartWithQuantity(id, quantity) {
             this.updateCartItem(id, quantity);
         },
@@ -36,12 +37,14 @@ export const useCartStore = defineStore('cartStore', {
                 item.quantity += 1;
             }
         },
+
         decrementQuantity(id) {
             const item = this.kosik.find(item => item.id === id);
             if (item && item.quantity > 1) {
                 item.quantity -= 1;
             }
         },
+        
         removeItemFromCart(id) {
             const index = this.kosik.findIndex(item => item.id === id);
             if (index !== -1) {

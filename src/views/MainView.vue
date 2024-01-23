@@ -5,13 +5,12 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" style="opacity: 0.55; border-radius: 20px;"
-                                :src="`/src/assets/img/slide_${i + 1}.jpg`" alt="">
+                            <img class="img-fluid" style="opacity: 0.55; border-radius: 20px;" :src="`/src/assets/img/slide_${i + 1}.jpg`" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
                                 <h1 class="h1 text-success"><b>{{ title[i] }}</b></h1>
-                                <p> {{ aktualny_text }}</p>
+                                <p>{{ aktualny_text }}</p>
                             </div>
                         </div>
                     </div>
@@ -53,7 +52,7 @@
                 </div>
             </div>
 
-            <CountDown :time="600000000" v-slot="{ days, hours, minutes, seconds }">
+            <CountDown :time="time" v-slot="{ days, hours, minutes, seconds }">
                 <div class="row">
                     <div class="col-md-3" v-for="(unit, index) in timeUnits" :key="unit.label">
                         <div class="card">
@@ -75,9 +74,7 @@
                     </v-card>
                 </v-item>
             </v-item-group>
-
         </div>
-
     </section>
 </template>
 
@@ -85,8 +82,11 @@
 import CountDown from '@chenfengyuan/vue-countdown';
 export default {
     data() {
+        const actualDate = new Date();
+        const discount = new Date(2024, 6, 7, 12, 0);
         return {
             clicked: false,
+            time: discount - actualDate,
             title: [
                 'Discover the Signature Fragrances Redefining Your Everyday Style',
                 'The Essence of Elegance',

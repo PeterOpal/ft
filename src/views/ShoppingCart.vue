@@ -23,7 +23,7 @@
         <tr v-for="(item, index) in cartItems" :key="item.id">
           <th>{{ index + 1 }}</th>
           <td><img :src="getProductDetails(item.id).image" widht="80px" height="80px"></td>
-          <td>{{ getProductDetails(item.id).fragrance_name }} </td>
+          <td><router-link :to="`/shop/product?id=${item.id}`" class="link">{{ getProductDetails(item.id).fragrance_name }} </router-link></td>
           <td><button class="rounded-circle quantity" @click="decrement(item.id)">-</button></td>
           <td>{{ item.quantity }} * {{ getProductDetails(item.id).quantity }}</td>
           <td><button class="rounded-circle quantity" @click="increment(item.id)">+</button></td>
@@ -45,42 +45,16 @@
                 <v-card-text>
                   <v-container>
                     <v-row>
-                      <v-col cols="12" sm="6" md="6">
-                        <v-text-field label="First name*" required></v-text-field>
+                      <v-col v-for="label in labels" cols="12">
+                        <v-text-field :label="label" required></v-text-field>
                       </v-col>
-                      <v-col cols="12" sm="6" md="6">
-                        <v-text-field label="Last name*" required></v-text-field>
-                      </v-col>
-
-                      <v-col cols="12">
-                        <v-text-field label="Email*" required></v-text-field>
-                      </v-col>
-
-                      <v-col cols="12">
-                        <v-text-field label="Phone number*" required></v-text-field>
-                      </v-col>
-
-                      <v-col cols="12">
-                        <v-text-field label="City&address*" required></v-text-field>
-                      </v-col>
-
-                      <v-col cols="12">
-                        <v-text-field type="number" label="Postal code*" required></v-text-field>
-                      </v-col>
-
-                      <v-col cols="12">
-                        <v-text-field label="Coupon code" required></v-text-field>
-                      </v-col>
-
                       <v-col cols="12" sm="6">
                         <v-select :items="['DHL', 'Post']" label="Shipping*" required></v-select>
                       </v-col>
-
                       <v-col cols="12" sm="6">
                         <v-select v-model="paymentMethod" :items="['Crypto', 'Credit Card', 'Debit Card', 'PayPal']"
                           label="Payment*" required></v-select>
                       </v-col>
-
                     </v-row>
                   </v-container>
                   <small>*required field</small>
@@ -116,6 +90,7 @@ export default {
       cartItems: [],
       dialog: false,
       paymentMethod: '',
+      labels: ['First name*', 'Last name*', 'E-mail*', 'Phone number*', 'City & Address*', 'Postal code*', 'Coupon code']
     };
   },
   created() {
@@ -166,6 +141,13 @@ export default {
 }
 .quantity:hover {
   background: #a7e0b5;
+}
+.link{
+  color: #59ab6e;
+  text-decoration: none;
+}
+.link:hover{
+  text-decoration: underline;
 }
 .remove:hover {
   background-color: red;

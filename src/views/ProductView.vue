@@ -1,5 +1,6 @@
 <template>
     <section class="bg-light">
+
         <div class="container pb-5">
             <div v-if="error">
                 <div class="row text-center" style="padding-bottom: 200px; padding-top: 200px;">
@@ -7,6 +8,7 @@
                     <h4 class="text-warning">Product was removed!</h4>
                 </div>
             </div>
+
             <div v-else class="row">
                 <div class="col-lg-5 mt-5 pt-8">
                     <div class="card mb-3">
@@ -14,15 +16,15 @@
                             id="product-detail" style="border: 3px solid rgb(0, 0, 0)">
                     </div>
                 </div>
+
                 <div class="col-lg-7 mt-5">
                     <div class="card">
                         <div class="card-body">
-
-                            <h1 class="h2" style="font-family: Comic Sans MS, cursive"> {{ actualFragrance.fragrance_name }}
-                            </h1>
+                            <h1 class="h2" style="font-family: Comic Sans MS, cursive"> {{ actualFragrance.fragrance_name }} </h1>
                             <p class="h3 py-2">{{ actualFragrance.price }}€</p>
                             <Rating :rating="actualFragrance.rating" />
                             <span class="list-inline-item text-dark"> - rating by fragratica magazine</span>
+                            
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <h6>Brand:</h6>
@@ -37,10 +39,9 @@
 
                             <h6>Specification:</h6>
                             <ul class="list-unstyled pb-3">
-                                <li>for {{ actualFragrance.gender }}</li>
+                                <li>for {{ actualFragrance.gender }}, quantity: {{ actualFragrance.quantity }}</li>
                             </ul>
 
-                            <input type="hidden" name="product-title" value="Activewear">
                             <div class="row">
                                 <div class="col-auto">
                                     <ul class="list-inline pb-3">
@@ -54,9 +55,6 @@
                                 </div>
                             </div>
                             <div class="row pb-3">
-                                <div class="col d-grid">
-                                    <button class="btn btn-success btn-lg">Buy</button>
-                                </div>
                                 <div class="col d-grid">
                                     <button @click="addToCart" class="btn btn-success btn-lg">Add To Cart</button>
                                 </div>

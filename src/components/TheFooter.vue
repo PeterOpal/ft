@@ -85,9 +85,9 @@ export default {
                 { url: 'https://www.linkedin.com/', class: 'fab fa-linkedin' }
             ],
             contact: [
-            { class: 'fas fa-map-marker-alt', text: ' 123 Bratislava' },
-            { class: 'fa fa-phone', IsHref: true, link: 'tel:+421915999999', text: ' +421915999999' },
-            { class: 'fa fa-envelope', IsHref: true, link: 'mailto:peter.opal@student.ukf.sk', text: ' peter.opal@student.ukf.sk' }
+                { class: 'fas fa-map-marker-alt', text: ' 123 Bratislava' },
+                { class: 'fa fa-phone', IsHref: true, link: 'tel:+421915999999', text: ' +421915999999' },
+                { class: 'fa fa-envelope', IsHref: true, link: 'mailto:peter.opal@student.ukf.sk', text: ' peter.opal@student.ukf.sk' }
             ]
         };
     },
