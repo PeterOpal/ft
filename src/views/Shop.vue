@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <ul class="list-inline shop-top-menu pb-3 pt-1">
                         <li class="list-inline-item">
-                            <button @click="filterProducts('all')" class="h3 text-dark text-decoration-none mr-3">All</button>
+                            <button class="h3 text-dark text-decoration-none mr-3">All</button>
                         </li>
                         <li class="list-inline-item">
                             <button @click="filterProducts('men')" class="h3 text-dark text-decoration-none mr-3">Men's</button>
@@ -59,19 +59,13 @@ export default {
                 this.sortLowestToHighest();
             } else if (sort === 'highestToLowest') {
                 this.sortHighestToLowest();
-            } else if (sort === 'featured') {
-                this.resetSorting();
-            }
+            } 
         },
         sortLowestToHighest() {
             this.filtered_products.sort((a, b) => a.price - b.price);
         },
         sortHighestToLowest() {
             this.filtered_products.sort((a, b) => b.price - a.price);
-        },
-        resetSorting(){
-            const resetProducts = [...this.fragrances];
-            this.$set(this, 'filtered_products', resetProducts);
         }
     }
 }

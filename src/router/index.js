@@ -20,7 +20,7 @@ const router = createRouter({
       component: Shop
     },
     {
-      path: '/shop/:id', // Use a dynamic route parameter for the product ID
+      path: '/shop/product', 
       name: 'product-view',
       component: ProductView,
     },

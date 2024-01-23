@@ -6,7 +6,7 @@
                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                     <ul class="list-unstyled">
      
-                        <li><router-link class="btn btn-success text-white mt-2" :to="'/shop/' + fragrance.id"
+                        <li><router-link class="btn btn-success text-white mt-2" :to="'/shop/product?id=' + fragrance.id"
                                 :key="fragrance.id"><i class="far fa-eye"></i></router-link></li>
                         <li><button class="btn btn-success text-white mt-2"
                                 @click="cartStore.addItemToCart(fragrance.id)"><i class="fas fa-cart-plus"></i></button>
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <router-link class="h3 text-decoration-none greenhover" :to="'/shop/' + fragrance.id" :key="fragrance.id"><strong>{{
+                <router-link class="h3 text-decoration-none greenhover" :to="'/shop/product?id=' + fragrance.id" :key="fragrance.id"><strong>{{
                     fragrance.fragrance_name }}</strong> 
                 </router-link>
                 <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">

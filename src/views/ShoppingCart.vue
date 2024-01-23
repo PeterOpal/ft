@@ -29,7 +29,7 @@
           <td><button class="rounded-circle quantity" @click="increment(item.id)">+</button></td>
           <td>{{ getProductDetails(item.id).price }} EUR</td>
           <td><button @click="removeItem(item.id)"><img class="remove" src="/src/assets/img/remove.png" height="40px" width="40px"></button></td>
-          <td>{{ getProductDetails(item.id).price * item.quantity }} EUR</td>
+          <td>{{ (getProductDetails(item.id).price * item.quantity).toFixed(2) }} EUR</td>
         </tr>
         <tr>
           <td colspan="8" style="text-align:right;"><b>Total</b></td>
@@ -68,6 +68,10 @@
                         <v-text-field type="number" label="Postal code*" required></v-text-field>
                       </v-col>
 
+                      <v-col cols="12">
+                        <v-text-field label="Coupon code" required></v-text-field>
+                      </v-col>
+
                       <v-col cols="12" sm="6">
                         <v-select :items="['DHL', 'Post']" label="Shipping*" required></v-select>
                       </v-col>
@@ -83,12 +87,8 @@
                 </v-card-text>
                 <v-card-actions>
                   <v-spacer></v-spacer>
-                  <v-btn color="#59ab6e" variant="text" @click="dialog = false">
-                    Back to shop
-                  </v-btn>
-                  <v-btn color="#59ab6e" variant="text" @click="pay">
-                    Pay
-                  </v-btn>
+                  <v-btn color="#59ab6e" variant="text" @click="dialog = false">Back to shop</v-btn>
+                  <v-btn color="#59ab6e" variant="text" @click="pay">Pay</v-btn>
                 </v-card-actions>
               </v-card>
             </v-dialog>
@@ -157,7 +157,6 @@ export default {
 
 </script>
 
-
 <style scoped>
 .quantity {
   color: #59ab6e;
@@ -165,11 +164,9 @@ export default {
   font-weight: 500;
   border: 1px solid #59ab6e;
 }
-
 .quantity:hover {
   background: #a7e0b5;
 }
-
 .remove:hover {
   background-color: red;
   border-radius: 10px;
